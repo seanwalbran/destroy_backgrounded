@@ -1,0 +1,6 @@
+Sean Walbran - Original Author
+
+
+Complete list of contributors:
+https://github.com/socialcast/destroy_backgrounded/contributors
+
