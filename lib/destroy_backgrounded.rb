@@ -24,11 +24,11 @@ module DestroyBackgrounded
   module AliasMethods
     def self.included(base)
       base.send(:alias_method, :destroy_immediate, :destroy)
+      base.send(:backgrounded, :destroy_immediate)
     end
   end
 
   module InstanceMethods
-    backgrounded :destroy_immediate
     
     def destroy
       if self.class.destroy_backgrounded?
